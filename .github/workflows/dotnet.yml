@@ -19,8 +19,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore test1.sln --test1.sln es la solución completa
+      run: dotnet restore UniversityGrades.csproj --test1.sln es la solución completa
     - name: Build
-      run: dotnet build test1.sln --no-restore
+      run: dotnet build UniversityGrades.csproj --no-restore
     - name: Test
-      run: dotnet test test1.sln --no-build --verbosity normal
+      run: dotnet test UniversityGrades.csproj --no-build --verbosity normal
